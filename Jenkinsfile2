@@ -3,13 +3,6 @@
 @Library('shared-library@master') _ //master or whatever branch
 
 pipeline{
-
-      agent {
-                docker {
-                image 'mvn'
-                args '-v $HOME/.m2:/root/.m2'
-                }
-            }
         
         stages{
 
